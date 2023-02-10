@@ -1,0 +1,82 @@
+/*Basic Styles*/
+
+
+* {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    margin-top: 2em;
+    height: 100vh;
+    background-color: rgba(243,179,233,1);
+    display: flex;
+    justify-content: center;
+}
+.input-section{
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 1.5em;
+}
+
+#task-input::placeholder{
+    font-size: .9em;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+
+}
+
+.task-section.active {
+    width: 18em;
+    font-size: 1rem;
+    margin: 1em auto 0 auto;
+    display: flex;
+    gap: .5em;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border-radius: 1.5em;
+}
+
+#add-task-btn{
+    background-color: lightgreen;
+    border: none;
+    height: 1.3em;
+    box-shadow: 0 0 2px #262626;
+    cursor: pointer;
+    color: #262626;
+}
+
+#add-task-btn:hover{
+    background-color: rgba(144, 238, 144, 0.79);
+}
+.task {
+    word-break:break-all;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.task.done{
+    text-decoration: line-through;
+}
+
+.task-section button {
+    padding: 0.1em .6em;
+    border: none;
+    height: 1.9em;
+    box-shadow: 0 0 2px #262626;
+    cursor: pointer;
+}
+
+#add-task-btn{
+padding: 0 1em;
+}
+
+.done-btn{
+    color: orange;
+}
